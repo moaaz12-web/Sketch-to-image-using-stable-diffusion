@@ -1,0 +1,1347 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "collapsed_sections": []
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    },
+    "accelerator": "GPU",
+    "gpuClass": "standard",
+    "widgets": {
+      "application/vnd.jupyter.widget-state+json": {
+        "4469051451f94997b5bbee5d93ce74ee": {
+          "model_module": "@jupyter-widgets/controls",
+          "model_name": "VBoxModel",
+          "model_module_version": "1.5.0",
+          "state": {
+            "_dom_classes": [],
+            "_model_module": "@jupyter-widgets/controls",
+            "_model_module_version": "1.5.0",
+            "_model_name": "VBoxModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/controls",
+            "_view_module_version": "1.5.0",
+            "_view_name": "VBoxView",
+            "box_style": "",
+            "children": [
+              "IPY_MODEL_803b3b578ecc4404b05c41f27ed9e44b",
+              "IPY_MODEL_94d53431ec824f60885a3c33053922b6",
+              "IPY_MODEL_8a9b0e690e104ab8a6c0fb05f43df76e",
+              "IPY_MODEL_75dac8d9065a4eb982424e860cabe622"
+            ],
+            "layout": "IPY_MODEL_daa4ae9cab174ab49e32138a76e4b6fd"
+          }
+        },
+        "803b3b578ecc4404b05c41f27ed9e44b": {
+          "model_module": "@jupyter-widgets/controls",
+          "model_name": "HTMLModel",
+          "model_module_version": "1.5.0",
+          "state": {
+            "_dom_classes": [],
+            "_model_module": "@jupyter-widgets/controls",
+            "_model_module_version": "1.5.0",
+            "_model_name": "HTMLModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/controls",
+            "_view_module_version": "1.5.0",
+            "_view_name": "HTMLView",
+            "description": "",
+            "description_tooltip": null,
+            "layout": "IPY_MODEL_8f155d92c66f4b2692a208cd7096e194",
+            "placeholder": "​",
+            "style": "IPY_MODEL_edeb1da89d424ea4922a93d5814dd8d7",
+            "value": "<center> <img\nsrc=https://huggingface.co/front/assets/huggingface_logo-noborder.svg\nalt='Hugging Face'> <br> Copy a token from <a\nhref=\"https://huggingface.co/settings/tokens\" target=\"_blank\">your Hugging Face\ntokens page</a> and paste it below. <br> Immediately click login after copying\nyour token or it might be stored in plain text in this notebook file. </center>"
+          }
+        },
+        "94d53431ec824f60885a3c33053922b6": {
+          "model_module": "@jupyter-widgets/controls",
+          "model_name": "PasswordModel",
+          "model_module_version": "1.5.0",
+          "state": {
+            "_dom_classes": [],
+            "_model_module": "@jupyter-widgets/controls",
+            "_model_module_version": "1.5.0",
+            "_model_name": "PasswordModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/controls",
+            "_view_module_version": "1.5.0",
+            "_view_name": "PasswordView",
+            "continuous_update": true,
+            "description": "Token:",
+            "description_tooltip": null,
+            "disabled": false,
+            "layout": "IPY_MODEL_54b91a9ca887429cbb99dd8908122838",
+            "placeholder": "​",
+            "style": "IPY_MODEL_a3f30566e476467eafa728cbb1a71f33",
+            "value": ""
+          }
+        },
+        "8a9b0e690e104ab8a6c0fb05f43df76e": {
+          "model_module": "@jupyter-widgets/controls",
+          "model_name": "ButtonModel",
+          "model_module_version": "1.5.0",
+          "state": {
+            "_dom_classes": [],
+            "_model_module": "@jupyter-widgets/controls",
+            "_model_module_version": "1.5.0",
+            "_model_name": "ButtonModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/controls",
+            "_view_module_version": "1.5.0",
+            "_view_name": "ButtonView",
+            "button_style": "",
+            "description": "Login",
+            "disabled": false,
+            "icon": "",
+            "layout": "IPY_MODEL_be38bab0e6a345978aab0033b472c46e",
+            "style": "IPY_MODEL_cf22c3ef93454ffb84a239455a7699c6",
+            "tooltip": ""
+          }
+        },
+        "75dac8d9065a4eb982424e860cabe622": {
+          "model_module": "@jupyter-widgets/controls",
+          "model_name": "HTMLModel",
+          "model_module_version": "1.5.0",
+          "state": {
+            "_dom_classes": [],
+            "_model_module": "@jupyter-widgets/controls",
+            "_model_module_version": "1.5.0",
+            "_model_name": "HTMLModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/controls",
+            "_view_module_version": "1.5.0",
+            "_view_name": "HTMLView",
+            "description": "",
+            "description_tooltip": null,
+            "layout": "IPY_MODEL_73cba90e6bc046fc978b9ee7ea955f8d",
+            "placeholder": "​",
+            "style": "IPY_MODEL_e8fd4ec28bdf432aac47fcfed544aed8",
+            "value": "\n<b>Pro Tip:</b> If you don't already have one, you can create a dedicated\n'notebooks' token with 'write' access, that you can then easily reuse for all\nnotebooks. </center>"
+          }
+        },
+        "daa4ae9cab174ab49e32138a76e4b6fd": {
+          "model_module": "@jupyter-widgets/base",
+          "model_name": "LayoutModel",
+          "model_module_version": "1.2.0",
+          "state": {
+            "_model_module": "@jupyter-widgets/base",
+            "_model_module_version": "1.2.0",
+            "_model_name": "LayoutModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/base",
+            "_view_module_version": "1.2.0",
+            "_view_name": "LayoutView",
+            "align_content": null,
+            "align_items": "center",
+            "align_self": null,
+            "border": null,
+            "bottom": null,
+            "display": "flex",
+            "flex": null,
+            "flex_flow": "column",
+            "grid_area": null,
+            "grid_auto_columns": null,
+            "grid_auto_flow": null,
+            "grid_auto_rows": null,
+            "grid_column": null,
+            "grid_gap": null,
+            "grid_row": null,
+            "grid_template_areas": null,
+            "grid_template_columns": null,
+            "grid_template_rows": null,
+            "height": null,
+            "justify_content": null,
+            "justify_items": null,
+            "left": null,
+            "margin": null,
+            "max_height": null,
+            "max_width": null,
+            "min_height": null,
+            "min_width": null,
+            "object_fit": null,
+            "object_position": null,
+            "order": null,
+            "overflow": null,
+            "overflow_x": null,
+            "overflow_y": null,
+            "padding": null,
+            "right": null,
+            "top": null,
+            "visibility": null,
+            "width": "50%"
+          }
+        },
+        "8f155d92c66f4b2692a208cd7096e194": {
+          "model_module": "@jupyter-widgets/base",
+          "model_name": "LayoutModel",
+          "model_module_version": "1.2.0",
+          "state": {
+            "_model_module": "@jupyter-widgets/base",
+            "_model_module_version": "1.2.0",
+            "_model_name": "LayoutModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/base",
+            "_view_module_version": "1.2.0",
+            "_view_name": "LayoutView",
+            "align_content": null,
+            "align_items": null,
+            "align_self": null,
+            "border": null,
+            "bottom": null,
+            "display": null,
+            "flex": null,
+            "flex_flow": null,
+            "grid_area": null,
+            "grid_auto_columns": null,
+            "grid_auto_flow": null,
+            "grid_auto_rows": null,
+            "grid_column": null,
+            "grid_gap": null,
+            "grid_row": null,
+            "grid_template_areas": null,
+            "grid_template_columns": null,
+            "grid_template_rows": null,
+            "height": null,
+            "justify_content": null,
+            "justify_items": null,
+            "left": null,
+            "margin": null,
+            "max_height": null,
+            "max_width": null,
+            "min_height": null,
+            "min_width": null,
+            "object_fit": null,
+            "object_position": null,
+            "order": null,
+            "overflow": null,
+            "overflow_x": null,
+            "overflow_y": null,
+            "padding": null,
+            "right": null,
+            "top": null,
+            "visibility": null,
+            "width": null
+          }
+        },
+        "edeb1da89d424ea4922a93d5814dd8d7": {
+          "model_module": "@jupyter-widgets/controls",
+          "model_name": "DescriptionStyleModel",
+          "model_module_version": "1.5.0",
+          "state": {
+            "_model_module": "@jupyter-widgets/controls",
+            "_model_module_version": "1.5.0",
+            "_model_name": "DescriptionStyleModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/base",
+            "_view_module_version": "1.2.0",
+            "_view_name": "StyleView",
+            "description_width": ""
+          }
+        },
+        "54b91a9ca887429cbb99dd8908122838": {
+          "model_module": "@jupyter-widgets/base",
+          "model_name": "LayoutModel",
+          "model_module_version": "1.2.0",
+          "state": {
+            "_model_module": "@jupyter-widgets/base",
+            "_model_module_version": "1.2.0",
+            "_model_name": "LayoutModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/base",
+            "_view_module_version": "1.2.0",
+            "_view_name": "LayoutView",
+            "align_content": null,
+            "align_items": null,
+            "align_self": null,
+            "border": null,
+            "bottom": null,
+            "display": null,
+            "flex": null,
+            "flex_flow": null,
+            "grid_area": null,
+            "grid_auto_columns": null,
+            "grid_auto_flow": null,
+            "grid_auto_rows": null,
+            "grid_column": null,
+            "grid_gap": null,
+            "grid_row": null,
+            "grid_template_areas": null,
+            "grid_template_columns": null,
+            "grid_template_rows": null,
+            "height": null,
+            "justify_content": null,
+            "justify_items": null,
+            "left": null,
+            "margin": null,
+            "max_height": null,
+            "max_width": null,
+            "min_height": null,
+            "min_width": null,
+            "object_fit": null,
+            "object_position": null,
+            "order": null,
+            "overflow": null,
+            "overflow_x": null,
+            "overflow_y": null,
+            "padding": null,
+            "right": null,
+            "top": null,
+            "visibility": null,
+            "width": null
+          }
+        },
+        "a3f30566e476467eafa728cbb1a71f33": {
+          "model_module": "@jupyter-widgets/controls",
+          "model_name": "DescriptionStyleModel",
+          "model_module_version": "1.5.0",
+          "state": {
+            "_model_module": "@jupyter-widgets/controls",
+            "_model_module_version": "1.5.0",
+            "_model_name": "DescriptionStyleModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/base",
+            "_view_module_version": "1.2.0",
+            "_view_name": "StyleView",
+            "description_width": ""
+          }
+        },
+        "be38bab0e6a345978aab0033b472c46e": {
+          "model_module": "@jupyter-widgets/base",
+          "model_name": "LayoutModel",
+          "model_module_version": "1.2.0",
+          "state": {
+            "_model_module": "@jupyter-widgets/base",
+            "_model_module_version": "1.2.0",
+            "_model_name": "LayoutModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/base",
+            "_view_module_version": "1.2.0",
+            "_view_name": "LayoutView",
+            "align_content": null,
+            "align_items": null,
+            "align_self": null,
+            "border": null,
+            "bottom": null,
+            "display": null,
+            "flex": null,
+            "flex_flow": null,
+            "grid_area": null,
+            "grid_auto_columns": null,
+            "grid_auto_flow": null,
+            "grid_auto_rows": null,
+            "grid_column": null,
+            "grid_gap": null,
+            "grid_row": null,
+            "grid_template_areas": null,
+            "grid_template_columns": null,
+            "grid_template_rows": null,
+            "height": null,
+            "justify_content": null,
+            "justify_items": null,
+            "left": null,
+            "margin": null,
+            "max_height": null,
+            "max_width": null,
+            "min_height": null,
+            "min_width": null,
+            "object_fit": null,
+            "object_position": null,
+            "order": null,
+            "overflow": null,
+            "overflow_x": null,
+            "overflow_y": null,
+            "padding": null,
+            "right": null,
+            "top": null,
+            "visibility": null,
+            "width": null
+          }
+        },
+        "cf22c3ef93454ffb84a239455a7699c6": {
+          "model_module": "@jupyter-widgets/controls",
+          "model_name": "ButtonStyleModel",
+          "model_module_version": "1.5.0",
+          "state": {
+            "_model_module": "@jupyter-widgets/controls",
+            "_model_module_version": "1.5.0",
+            "_model_name": "ButtonStyleModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/base",
+            "_view_module_version": "1.2.0",
+            "_view_name": "StyleView",
+            "button_color": null,
+            "font_weight": ""
+          }
+        },
+        "73cba90e6bc046fc978b9ee7ea955f8d": {
+          "model_module": "@jupyter-widgets/base",
+          "model_name": "LayoutModel",
+          "model_module_version": "1.2.0",
+          "state": {
+            "_model_module": "@jupyter-widgets/base",
+            "_model_module_version": "1.2.0",
+            "_model_name": "LayoutModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/base",
+            "_view_module_version": "1.2.0",
+            "_view_name": "LayoutView",
+            "align_content": null,
+            "align_items": null,
+            "align_self": null,
+            "border": null,
+            "bottom": null,
+            "display": null,
+            "flex": null,
+            "flex_flow": null,
+            "grid_area": null,
+            "grid_auto_columns": null,
+            "grid_auto_flow": null,
+            "grid_auto_rows": null,
+            "grid_column": null,
+            "grid_gap": null,
+            "grid_row": null,
+            "grid_template_areas": null,
+            "grid_template_columns": null,
+            "grid_template_rows": null,
+            "height": null,
+            "justify_content": null,
+            "justify_items": null,
+            "left": null,
+            "margin": null,
+            "max_height": null,
+            "max_width": null,
+            "min_height": null,
+            "min_width": null,
+            "object_fit": null,
+            "object_position": null,
+            "order": null,
+            "overflow": null,
+            "overflow_x": null,
+            "overflow_y": null,
+            "padding": null,
+            "right": null,
+            "top": null,
+            "visibility": null,
+            "width": null
+          }
+        },
+        "e8fd4ec28bdf432aac47fcfed544aed8": {
+          "model_module": "@jupyter-widgets/controls",
+          "model_name": "DescriptionStyleModel",
+          "model_module_version": "1.5.0",
+          "state": {
+            "_model_module": "@jupyter-widgets/controls",
+            "_model_module_version": "1.5.0",
+            "_model_name": "DescriptionStyleModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/base",
+            "_view_module_version": "1.2.0",
+            "_view_name": "StyleView",
+            "description_width": ""
+          }
+        },
+        "2ee7a9ef29804bb3a7c9c04d61318d36": {
+          "model_module": "@jupyter-widgets/controls",
+          "model_name": "HBoxModel",
+          "model_module_version": "1.5.0",
+          "state": {
+            "_dom_classes": [],
+            "_model_module": "@jupyter-widgets/controls",
+            "_model_module_version": "1.5.0",
+            "_model_name": "HBoxModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/controls",
+            "_view_module_version": "1.5.0",
+            "_view_name": "HBoxView",
+            "box_style": "",
+            "children": [
+              "IPY_MODEL_30d0ed2240ba43508fe28b7633ec30e1",
+              "IPY_MODEL_36e6509a1ef948acb05b509a31faf5be",
+              "IPY_MODEL_ea2a9e3cff914fdba3a8300aa3c83d59"
+            ],
+            "layout": "IPY_MODEL_96462921ab3147b593823b1df41e549c"
+          }
+        },
+        "30d0ed2240ba43508fe28b7633ec30e1": {
+          "model_module": "@jupyter-widgets/controls",
+          "model_name": "HTMLModel",
+          "model_module_version": "1.5.0",
+          "state": {
+            "_dom_classes": [],
+            "_model_module": "@jupyter-widgets/controls",
+            "_model_module_version": "1.5.0",
+            "_model_name": "HTMLModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/controls",
+            "_view_module_version": "1.5.0",
+            "_view_name": "HTMLView",
+            "description": "",
+            "description_tooltip": null,
+            "layout": "IPY_MODEL_853ffd2d3dd045f38829654f8c4ee311",
+            "placeholder": "​",
+            "style": "IPY_MODEL_98dbe39f6b0545a694eabb173eed72cb",
+            "value": "Fetching 19 files: 100%"
+          }
+        },
+        "36e6509a1ef948acb05b509a31faf5be": {
+          "model_module": "@jupyter-widgets/controls",
+          "model_name": "FloatProgressModel",
+          "model_module_version": "1.5.0",
+          "state": {
+            "_dom_classes": [],
+            "_model_module": "@jupyter-widgets/controls",
+            "_model_module_version": "1.5.0",
+            "_model_name": "FloatProgressModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/controls",
+            "_view_module_version": "1.5.0",
+            "_view_name": "ProgressView",
+            "bar_style": "success",
+            "description": "",
+            "description_tooltip": null,
+            "layout": "IPY_MODEL_70605277e68a41e0be8daeaaed289494",
+            "max": 19,
+            "min": 0,
+            "orientation": "horizontal",
+            "style": "IPY_MODEL_1d6127aec1674cc8946a04c07f0144de",
+            "value": 19
+          }
+        },
+        "ea2a9e3cff914fdba3a8300aa3c83d59": {
+          "model_module": "@jupyter-widgets/controls",
+          "model_name": "HTMLModel",
+          "model_module_version": "1.5.0",
+          "state": {
+            "_dom_classes": [],
+            "_model_module": "@jupyter-widgets/controls",
+            "_model_module_version": "1.5.0",
+            "_model_name": "HTMLModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/controls",
+            "_view_module_version": "1.5.0",
+            "_view_name": "HTMLView",
+            "description": "",
+            "description_tooltip": null,
+            "layout": "IPY_MODEL_2fe79d43e5f045bdb6c6beb1d95d8185",
+            "placeholder": "​",
+            "style": "IPY_MODEL_dc2e2c2c73cd447181beb1a5e4fa8127",
+            "value": " 19/19 [00:00&lt;00:00, 396.97it/s]"
+          }
+        },
+        "96462921ab3147b593823b1df41e549c": {
+          "model_module": "@jupyter-widgets/base",
+          "model_name": "LayoutModel",
+          "model_module_version": "1.2.0",
+          "state": {
+            "_model_module": "@jupyter-widgets/base",
+            "_model_module_version": "1.2.0",
+            "_model_name": "LayoutModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/base",
+            "_view_module_version": "1.2.0",
+            "_view_name": "LayoutView",
+            "align_content": null,
+            "align_items": null,
+            "align_self": null,
+            "border": null,
+            "bottom": null,
+            "display": null,
+            "flex": null,
+            "flex_flow": null,
+            "grid_area": null,
+            "grid_auto_columns": null,
+            "grid_auto_flow": null,
+            "grid_auto_rows": null,
+            "grid_column": null,
+            "grid_gap": null,
+            "grid_row": null,
+            "grid_template_areas": null,
+            "grid_template_columns": null,
+            "grid_template_rows": null,
+            "height": null,
+            "justify_content": null,
+            "justify_items": null,
+            "left": null,
+            "margin": null,
+            "max_height": null,
+            "max_width": null,
+            "min_height": null,
+            "min_width": null,
+            "object_fit": null,
+            "object_position": null,
+            "order": null,
+            "overflow": null,
+            "overflow_x": null,
+            "overflow_y": null,
+            "padding": null,
+            "right": null,
+            "top": null,
+            "visibility": null,
+            "width": null
+          }
+        },
+        "853ffd2d3dd045f38829654f8c4ee311": {
+          "model_module": "@jupyter-widgets/base",
+          "model_name": "LayoutModel",
+          "model_module_version": "1.2.0",
+          "state": {
+            "_model_module": "@jupyter-widgets/base",
+            "_model_module_version": "1.2.0",
+            "_model_name": "LayoutModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/base",
+            "_view_module_version": "1.2.0",
+            "_view_name": "LayoutView",
+            "align_content": null,
+            "align_items": null,
+            "align_self": null,
+            "border": null,
+            "bottom": null,
+            "display": null,
+            "flex": null,
+            "flex_flow": null,
+            "grid_area": null,
+            "grid_auto_columns": null,
+            "grid_auto_flow": null,
+            "grid_auto_rows": null,
+            "grid_column": null,
+            "grid_gap": null,
+            "grid_row": null,
+            "grid_template_areas": null,
+            "grid_template_columns": null,
+            "grid_template_rows": null,
+            "height": null,
+            "justify_content": null,
+            "justify_items": null,
+            "left": null,
+            "margin": null,
+            "max_height": null,
+            "max_width": null,
+            "min_height": null,
+            "min_width": null,
+            "object_fit": null,
+            "object_position": null,
+            "order": null,
+            "overflow": null,
+            "overflow_x": null,
+            "overflow_y": null,
+            "padding": null,
+            "right": null,
+            "top": null,
+            "visibility": null,
+            "width": null
+          }
+        },
+        "98dbe39f6b0545a694eabb173eed72cb": {
+          "model_module": "@jupyter-widgets/controls",
+          "model_name": "DescriptionStyleModel",
+          "model_module_version": "1.5.0",
+          "state": {
+            "_model_module": "@jupyter-widgets/controls",
+            "_model_module_version": "1.5.0",
+            "_model_name": "DescriptionStyleModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/base",
+            "_view_module_version": "1.2.0",
+            "_view_name": "StyleView",
+            "description_width": ""
+          }
+        },
+        "70605277e68a41e0be8daeaaed289494": {
+          "model_module": "@jupyter-widgets/base",
+          "model_name": "LayoutModel",
+          "model_module_version": "1.2.0",
+          "state": {
+            "_model_module": "@jupyter-widgets/base",
+            "_model_module_version": "1.2.0",
+            "_model_name": "LayoutModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/base",
+            "_view_module_version": "1.2.0",
+            "_view_name": "LayoutView",
+            "align_content": null,
+            "align_items": null,
+            "align_self": null,
+            "border": null,
+            "bottom": null,
+            "display": null,
+            "flex": null,
+            "flex_flow": null,
+            "grid_area": null,
+            "grid_auto_columns": null,
+            "grid_auto_flow": null,
+            "grid_auto_rows": null,
+            "grid_column": null,
+            "grid_gap": null,
+            "grid_row": null,
+            "grid_template_areas": null,
+            "grid_template_columns": null,
+            "grid_template_rows": null,
+            "height": null,
+            "justify_content": null,
+            "justify_items": null,
+            "left": null,
+            "margin": null,
+            "max_height": null,
+            "max_width": null,
+            "min_height": null,
+            "min_width": null,
+            "object_fit": null,
+            "object_position": null,
+            "order": null,
+            "overflow": null,
+            "overflow_x": null,
+            "overflow_y": null,
+            "padding": null,
+            "right": null,
+            "top": null,
+            "visibility": null,
+            "width": null
+          }
+        },
+        "1d6127aec1674cc8946a04c07f0144de": {
+          "model_module": "@jupyter-widgets/controls",
+          "model_name": "ProgressStyleModel",
+          "model_module_version": "1.5.0",
+          "state": {
+            "_model_module": "@jupyter-widgets/controls",
+            "_model_module_version": "1.5.0",
+            "_model_name": "ProgressStyleModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/base",
+            "_view_module_version": "1.2.0",
+            "_view_name": "StyleView",
+            "bar_color": null,
+            "description_width": ""
+          }
+        },
+        "2fe79d43e5f045bdb6c6beb1d95d8185": {
+          "model_module": "@jupyter-widgets/base",
+          "model_name": "LayoutModel",
+          "model_module_version": "1.2.0",
+          "state": {
+            "_model_module": "@jupyter-widgets/base",
+            "_model_module_version": "1.2.0",
+            "_model_name": "LayoutModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/base",
+            "_view_module_version": "1.2.0",
+            "_view_name": "LayoutView",
+            "align_content": null,
+            "align_items": null,
+            "align_self": null,
+            "border": null,
+            "bottom": null,
+            "display": null,
+            "flex": null,
+            "flex_flow": null,
+            "grid_area": null,
+            "grid_auto_columns": null,
+            "grid_auto_flow": null,
+            "grid_auto_rows": null,
+            "grid_column": null,
+            "grid_gap": null,
+            "grid_row": null,
+            "grid_template_areas": null,
+            "grid_template_columns": null,
+            "grid_template_rows": null,
+            "height": null,
+            "justify_content": null,
+            "justify_items": null,
+            "left": null,
+            "margin": null,
+            "max_height": null,
+            "max_width": null,
+            "min_height": null,
+            "min_width": null,
+            "object_fit": null,
+            "object_position": null,
+            "order": null,
+            "overflow": null,
+            "overflow_x": null,
+            "overflow_y": null,
+            "padding": null,
+            "right": null,
+            "top": null,
+            "visibility": null,
+            "width": null
+          }
+        },
+        "dc2e2c2c73cd447181beb1a5e4fa8127": {
+          "model_module": "@jupyter-widgets/controls",
+          "model_name": "DescriptionStyleModel",
+          "model_module_version": "1.5.0",
+          "state": {
+            "_model_module": "@jupyter-widgets/controls",
+            "_model_module_version": "1.5.0",
+            "_model_name": "DescriptionStyleModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/base",
+            "_view_module_version": "1.2.0",
+            "_view_name": "StyleView",
+            "description_width": ""
+          }
+        }
+      }
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "crd_8vVOpr6L",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "7da3f813-d2f1-4917-81a3-79258872b710"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Mon Oct 17 20:02:35 2022       \n",
+            "+-----------------------------------------------------------------------------+\n",
+            "| NVIDIA-SMI 460.32.03    Driver Version: 460.32.03    CUDA Version: 11.2     |\n",
+            "|-------------------------------+----------------------+----------------------+\n",
+            "| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |\n",
+            "| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |\n",
+            "|                               |                      |               MIG M. |\n",
+            "|===============================+======================+======================|\n",
+            "|   0  Tesla T4            Off  | 00000000:00:04.0 Off |                    0 |\n",
+            "| N/A   67C    P8    12W /  70W |      0MiB / 15109MiB |      0%      Default |\n",
+            "|                               |                      |                  N/A |\n",
+            "+-------------------------------+----------------------+----------------------+\n",
+            "                                                                               \n",
+            "+-----------------------------------------------------------------------------+\n",
+            "| Processes:                                                                  |\n",
+            "|  GPU   GI   CI        PID   Type   Process name                  GPU Memory |\n",
+            "|        ID   ID                                                   Usage      |\n",
+            "|=============================================================================|\n",
+            "|  No running processes found                                                 |\n",
+            "+-----------------------------------------------------------------------------+\n"
+          ]
+        }
+      ],
+      "source": [
+        "#Check gpu status on Colab\n",
+        "!nvidia-smi"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# INSTALLING AND IMPORTING DEPENDENCIES"
+      ],
+      "metadata": {
+        "id": "1TkzS__dduQz"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "!pip install diffusers==0.3.0 transformers ftfy\n",
+        "!pip install  \"ipywidgets>=7,<8\"\n",
+        "! pip install gradio \n"
+      ],
+      "metadata": {
+        "id": "5-AM29iA68fL",
+        "outputId": "6f463cba-6b0c-4b30-c76f-e76063c4f0fe",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": 1,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Looking in indexes: https://pypi.org/simple, https://us-python.pkg.dev/colab-wheels/public/simple/\n",
+            "Collecting diffusers==0.3.0\n",
+            "  Downloading diffusers-0.3.0-py3-none-any.whl (153 kB)\n",
+            "\u001b[K     |████████████████████████████████| 153 kB 26.7 MB/s \n",
+            "\u001b[?25hCollecting transformers\n",
+            "  Downloading transformers-4.23.1-py3-none-any.whl (5.3 MB)\n",
+            "\u001b[K     |████████████████████████████████| 5.3 MB 63.1 MB/s \n",
+            "\u001b[?25hCollecting ftfy\n",
+            "  Downloading ftfy-6.1.1-py3-none-any.whl (53 kB)\n",
+            "\u001b[K     |████████████████████████████████| 53 kB 2.1 MB/s \n",
+            "\u001b[?25hRequirement already satisfied: filelock in /usr/local/lib/python3.7/dist-packages (from diffusers==0.3.0) (3.8.0)\n",
+            "Requirement already satisfied: numpy in /usr/local/lib/python3.7/dist-packages (from diffusers==0.3.0) (1.21.6)\n",
+            "Requirement already satisfied: Pillow in /usr/local/lib/python3.7/dist-packages (from diffusers==0.3.0) (7.1.2)\n",
+            "Requirement already satisfied: torch>=1.4 in /usr/local/lib/python3.7/dist-packages (from diffusers==0.3.0) (1.12.1+cu113)\n",
+            "Collecting huggingface-hub>=0.8.1\n",
+            "  Downloading huggingface_hub-0.10.1-py3-none-any.whl (163 kB)\n",
+            "\u001b[K     |████████████████████████████████| 163 kB 73.1 MB/s \n",
+            "\u001b[?25hRequirement already satisfied: importlib-metadata in /usr/local/lib/python3.7/dist-packages (from diffusers==0.3.0) (5.0.0)\n",
+            "Requirement already satisfied: requests in /usr/local/lib/python3.7/dist-packages (from diffusers==0.3.0) (2.23.0)\n",
+            "Requirement already satisfied: regex!=2019.12.17 in /usr/local/lib/python3.7/dist-packages (from diffusers==0.3.0) (2022.6.2)\n",
+            "Requirement already satisfied: tqdm in /usr/local/lib/python3.7/dist-packages (from huggingface-hub>=0.8.1->diffusers==0.3.0) (4.64.1)\n",
+            "Requirement already satisfied: typing-extensions>=3.7.4.3 in /usr/local/lib/python3.7/dist-packages (from huggingface-hub>=0.8.1->diffusers==0.3.0) (4.1.1)\n",
+            "Requirement already satisfied: packaging>=20.9 in /usr/local/lib/python3.7/dist-packages (from huggingface-hub>=0.8.1->diffusers==0.3.0) (21.3)\n",
+            "Requirement already satisfied: pyyaml>=5.1 in /usr/local/lib/python3.7/dist-packages (from huggingface-hub>=0.8.1->diffusers==0.3.0) (6.0)\n",
+            "Requirement already satisfied: pyparsing!=3.0.5,>=2.0.2 in /usr/local/lib/python3.7/dist-packages (from packaging>=20.9->huggingface-hub>=0.8.1->diffusers==0.3.0) (3.0.9)\n",
+            "Collecting tokenizers!=0.11.3,<0.14,>=0.11.1\n",
+            "  Downloading tokenizers-0.13.1-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (7.6 MB)\n",
+            "\u001b[K     |████████████████████████████████| 7.6 MB 54.6 MB/s \n",
+            "\u001b[?25hRequirement already satisfied: wcwidth>=0.2.5 in /usr/local/lib/python3.7/dist-packages (from ftfy) (0.2.5)\n",
+            "Requirement already satisfied: zipp>=0.5 in /usr/local/lib/python3.7/dist-packages (from importlib-metadata->diffusers==0.3.0) (3.9.0)\n",
+            "Requirement already satisfied: certifi>=2017.4.17 in /usr/local/lib/python3.7/dist-packages (from requests->diffusers==0.3.0) (2022.9.24)\n",
+            "Requirement already satisfied: idna<3,>=2.5 in /usr/local/lib/python3.7/dist-packages (from requests->diffusers==0.3.0) (2.10)\n",
+            "Requirement already satisfied: urllib3!=1.25.0,!=1.25.1,<1.26,>=1.21.1 in /usr/local/lib/python3.7/dist-packages (from requests->diffusers==0.3.0) (1.24.3)\n",
+            "Requirement already satisfied: chardet<4,>=3.0.2 in /usr/local/lib/python3.7/dist-packages (from requests->diffusers==0.3.0) (3.0.4)\n",
+            "Installing collected packages: tokenizers, huggingface-hub, transformers, ftfy, diffusers\n",
+            "Successfully installed diffusers-0.3.0 ftfy-6.1.1 huggingface-hub-0.10.1 tokenizers-0.13.1 transformers-4.23.1\n",
+            "Looking in indexes: https://pypi.org/simple, https://us-python.pkg.dev/colab-wheels/public/simple/\n",
+            "Requirement already satisfied: ipywidgets<8,>=7 in /usr/local/lib/python3.7/dist-packages (7.7.1)\n",
+            "Requirement already satisfied: ipython>=4.0.0 in /usr/local/lib/python3.7/dist-packages (from ipywidgets<8,>=7) (7.9.0)\n",
+            "Requirement already satisfied: ipython-genutils~=0.2.0 in /usr/local/lib/python3.7/dist-packages (from ipywidgets<8,>=7) (0.2.0)\n",
+            "Requirement already satisfied: jupyterlab-widgets>=1.0.0 in /usr/local/lib/python3.7/dist-packages (from ipywidgets<8,>=7) (3.0.3)\n",
+            "Requirement already satisfied: traitlets>=4.3.1 in /usr/local/lib/python3.7/dist-packages (from ipywidgets<8,>=7) (5.1.1)\n",
+            "Requirement already satisfied: ipykernel>=4.5.1 in /usr/local/lib/python3.7/dist-packages (from ipywidgets<8,>=7) (5.3.4)\n",
+            "Requirement already satisfied: widgetsnbextension~=3.6.0 in /usr/local/lib/python3.7/dist-packages (from ipywidgets<8,>=7) (3.6.1)\n",
+            "Requirement already satisfied: jupyter-client in /usr/local/lib/python3.7/dist-packages (from ipykernel>=4.5.1->ipywidgets<8,>=7) (6.1.12)\n",
+            "Requirement already satisfied: tornado>=4.2 in /usr/local/lib/python3.7/dist-packages (from ipykernel>=4.5.1->ipywidgets<8,>=7) (5.1.1)\n",
+            "Collecting jedi>=0.10\n",
+            "  Downloading jedi-0.18.1-py2.py3-none-any.whl (1.6 MB)\n",
+            "\u001b[K     |████████████████████████████████| 1.6 MB 23.5 MB/s \n",
+            "\u001b[?25hRequirement already satisfied: setuptools>=18.5 in /usr/local/lib/python3.7/dist-packages (from ipython>=4.0.0->ipywidgets<8,>=7) (57.4.0)\n",
+            "Requirement already satisfied: prompt-toolkit<2.1.0,>=2.0.0 in /usr/local/lib/python3.7/dist-packages (from ipython>=4.0.0->ipywidgets<8,>=7) (2.0.10)\n",
+            "Requirement already satisfied: pygments in /usr/local/lib/python3.7/dist-packages (from ipython>=4.0.0->ipywidgets<8,>=7) (2.6.1)\n",
+            "Requirement already satisfied: decorator in /usr/local/lib/python3.7/dist-packages (from ipython>=4.0.0->ipywidgets<8,>=7) (4.4.2)\n",
+            "Requirement already satisfied: backcall in /usr/local/lib/python3.7/dist-packages (from ipython>=4.0.0->ipywidgets<8,>=7) (0.2.0)\n",
+            "Requirement already satisfied: pexpect in /usr/local/lib/python3.7/dist-packages (from ipython>=4.0.0->ipywidgets<8,>=7) (4.8.0)\n",
+            "Requirement already satisfied: pickleshare in /usr/local/lib/python3.7/dist-packages (from ipython>=4.0.0->ipywidgets<8,>=7) (0.7.5)\n",
+            "Requirement already satisfied: parso<0.9.0,>=0.8.0 in /usr/local/lib/python3.7/dist-packages (from jedi>=0.10->ipython>=4.0.0->ipywidgets<8,>=7) (0.8.3)\n",
+            "Requirement already satisfied: six>=1.9.0 in /usr/local/lib/python3.7/dist-packages (from prompt-toolkit<2.1.0,>=2.0.0->ipython>=4.0.0->ipywidgets<8,>=7) (1.15.0)\n",
+            "Requirement already satisfied: wcwidth in /usr/local/lib/python3.7/dist-packages (from prompt-toolkit<2.1.0,>=2.0.0->ipython>=4.0.0->ipywidgets<8,>=7) (0.2.5)\n",
+            "Requirement already satisfied: notebook>=4.4.1 in /usr/local/lib/python3.7/dist-packages (from widgetsnbextension~=3.6.0->ipywidgets<8,>=7) (5.5.0)\n",
+            "Requirement already satisfied: nbformat in /usr/local/lib/python3.7/dist-packages (from notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets<8,>=7) (5.7.0)\n",
+            "Requirement already satisfied: jupyter-core>=4.4.0 in /usr/local/lib/python3.7/dist-packages (from notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets<8,>=7) (4.11.1)\n",
+            "Requirement already satisfied: pyzmq>=17 in /usr/local/lib/python3.7/dist-packages (from notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets<8,>=7) (23.2.1)\n",
+            "Requirement already satisfied: terminado>=0.8.1 in /usr/local/lib/python3.7/dist-packages (from notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets<8,>=7) (0.13.3)\n",
+            "Requirement already satisfied: nbconvert in /usr/local/lib/python3.7/dist-packages (from notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets<8,>=7) (5.6.1)\n",
+            "Requirement already satisfied: jinja2 in /usr/local/lib/python3.7/dist-packages (from notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets<8,>=7) (2.11.3)\n",
+            "Requirement already satisfied: Send2Trash in /usr/local/lib/python3.7/dist-packages (from notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets<8,>=7) (1.8.0)\n",
+            "Requirement already satisfied: python-dateutil>=2.1 in /usr/local/lib/python3.7/dist-packages (from jupyter-client->ipykernel>=4.5.1->ipywidgets<8,>=7) (2.8.2)\n",
+            "Requirement already satisfied: ptyprocess in /usr/local/lib/python3.7/dist-packages (from terminado>=0.8.1->notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets<8,>=7) (0.7.0)\n",
+            "Requirement already satisfied: MarkupSafe>=0.23 in /usr/local/lib/python3.7/dist-packages (from jinja2->notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets<8,>=7) (2.0.1)\n",
+            "Requirement already satisfied: mistune<2,>=0.8.1 in /usr/local/lib/python3.7/dist-packages (from nbconvert->notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets<8,>=7) (0.8.4)\n",
+            "Requirement already satisfied: entrypoints>=0.2.2 in /usr/local/lib/python3.7/dist-packages (from nbconvert->notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets<8,>=7) (0.4)\n",
+            "Requirement already satisfied: pandocfilters>=1.4.1 in /usr/local/lib/python3.7/dist-packages (from nbconvert->notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets<8,>=7) (1.5.0)\n",
+            "Requirement already satisfied: testpath in /usr/local/lib/python3.7/dist-packages (from nbconvert->notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets<8,>=7) (0.6.0)\n",
+            "Requirement already satisfied: bleach in /usr/local/lib/python3.7/dist-packages (from nbconvert->notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets<8,>=7) (5.0.1)\n",
+            "Requirement already satisfied: defusedxml in /usr/local/lib/python3.7/dist-packages (from nbconvert->notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets<8,>=7) (0.7.1)\n",
+            "Requirement already satisfied: fastjsonschema in /usr/local/lib/python3.7/dist-packages (from nbformat->notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets<8,>=7) (2.16.2)\n",
+            "Requirement already satisfied: importlib-metadata>=3.6 in /usr/local/lib/python3.7/dist-packages (from nbformat->notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets<8,>=7) (5.0.0)\n",
+            "Requirement already satisfied: jsonschema>=2.6 in /usr/local/lib/python3.7/dist-packages (from nbformat->notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets<8,>=7) (4.3.3)\n",
+            "Requirement already satisfied: zipp>=0.5 in /usr/local/lib/python3.7/dist-packages (from importlib-metadata>=3.6->nbformat->notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets<8,>=7) (3.9.0)\n",
+            "Requirement already satisfied: typing-extensions>=3.6.4 in /usr/local/lib/python3.7/dist-packages (from importlib-metadata>=3.6->nbformat->notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets<8,>=7) (4.1.1)\n",
+            "Requirement already satisfied: importlib-resources>=1.4.0 in /usr/local/lib/python3.7/dist-packages (from jsonschema>=2.6->nbformat->notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets<8,>=7) (5.10.0)\n",
+            "Requirement already satisfied: attrs>=17.4.0 in /usr/local/lib/python3.7/dist-packages (from jsonschema>=2.6->nbformat->notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets<8,>=7) (22.1.0)\n",
+            "Requirement already satisfied: pyrsistent!=0.17.0,!=0.17.1,!=0.17.2,>=0.14.0 in /usr/local/lib/python3.7/dist-packages (from jsonschema>=2.6->nbformat->notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets<8,>=7) (0.18.1)\n",
+            "Requirement already satisfied: webencodings in /usr/local/lib/python3.7/dist-packages (from bleach->nbconvert->notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets<8,>=7) (0.5.1)\n",
+            "Installing collected packages: jedi\n",
+            "Successfully installed jedi-0.18.1\n",
+            "Looking in indexes: https://pypi.org/simple, https://us-python.pkg.dev/colab-wheels/public/simple/\n",
+            "Collecting gradio\n",
+            "  Downloading gradio-3.5-py3-none-any.whl (5.3 MB)\n",
+            "\u001b[K     |████████████████████████████████| 5.3 MB 15.9 MB/s \n",
+            "\u001b[?25hRequirement already satisfied: requests in /usr/local/lib/python3.7/dist-packages (from gradio) (2.23.0)\n",
+            "Requirement already satisfied: pillow in /usr/local/lib/python3.7/dist-packages (from gradio) (7.1.2)\n",
+            "Requirement already satisfied: pydantic in /usr/local/lib/python3.7/dist-packages (from gradio) (1.9.2)\n",
+            "Requirement already satisfied: jinja2 in /usr/local/lib/python3.7/dist-packages (from gradio) (2.11.3)\n",
+            "Requirement already satisfied: numpy in /usr/local/lib/python3.7/dist-packages (from gradio) (1.21.6)\n",
+            "Collecting ffmpy\n",
+            "  Downloading ffmpy-0.3.0.tar.gz (4.8 kB)\n",
+            "Requirement already satisfied: matplotlib in /usr/local/lib/python3.7/dist-packages (from gradio) (3.2.2)\n",
+            "Requirement already satisfied: pyyaml in /usr/local/lib/python3.7/dist-packages (from gradio) (6.0)\n",
+            "Requirement already satisfied: pandas in /usr/local/lib/python3.7/dist-packages (from gradio) (1.3.5)\n",
+            "Collecting pydub\n",
+            "  Downloading pydub-0.25.1-py2.py3-none-any.whl (32 kB)\n",
+            "Collecting pycryptodome\n",
+            "  Downloading pycryptodome-3.15.0-cp35-abi3-manylinux2010_x86_64.whl (2.3 MB)\n",
+            "\u001b[K     |████████████████████████████████| 2.3 MB 55.0 MB/s \n",
+            "\u001b[?25hCollecting websockets\n",
+            "  Downloading websockets-10.3-cp37-cp37m-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_12_x86_64.manylinux2010_x86_64.whl (112 kB)\n",
+            "\u001b[K     |████████████████████████████████| 112 kB 69.4 MB/s \n",
+            "\u001b[?25hCollecting fastapi\n",
+            "  Downloading fastapi-0.85.1-py3-none-any.whl (55 kB)\n",
+            "\u001b[K     |████████████████████████████████| 55 kB 4.5 MB/s \n",
+            "\u001b[?25hCollecting uvicorn\n",
+            "  Downloading uvicorn-0.18.3-py3-none-any.whl (57 kB)\n",
+            "\u001b[K     |████████████████████████████████| 57 kB 3.5 MB/s \n",
+            "\u001b[?25hCollecting orjson\n",
+            "  Downloading orjson-3.8.0-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (270 kB)\n",
+            "\u001b[K     |████████████████████████████████| 270 kB 67.8 MB/s \n",
+            "\u001b[?25hCollecting paramiko\n",
+            "  Downloading paramiko-2.11.0-py2.py3-none-any.whl (212 kB)\n",
+            "\u001b[K     |████████████████████████████████| 212 kB 67.3 MB/s \n",
+            "\u001b[?25hCollecting h11<0.13,>=0.11\n",
+            "  Downloading h11-0.12.0-py3-none-any.whl (54 kB)\n",
+            "\u001b[K     |████████████████████████████████| 54 kB 3.7 MB/s \n",
+            "\u001b[?25hCollecting markdown-it-py[linkify,plugins]\n",
+            "  Downloading markdown_it_py-2.1.0-py3-none-any.whl (84 kB)\n",
+            "\u001b[K     |████████████████████████████████| 84 kB 1.9 MB/s \n",
+            "\u001b[?25hCollecting httpx\n",
+            "  Downloading httpx-0.23.0-py3-none-any.whl (84 kB)\n",
+            "\u001b[K     |████████████████████████████████| 84 kB 3.9 MB/s \n",
+            "\u001b[?25hRequirement already satisfied: fsspec in /usr/local/lib/python3.7/dist-packages (from gradio) (2022.8.2)\n",
+            "Requirement already satisfied: aiohttp in /usr/local/lib/python3.7/dist-packages (from gradio) (3.8.3)\n",
+            "Collecting python-multipart\n",
+            "  Downloading python-multipart-0.0.5.tar.gz (32 kB)\n",
+            "Requirement already satisfied: aiosignal>=1.1.2 in /usr/local/lib/python3.7/dist-packages (from aiohttp->gradio) (1.2.0)\n",
+            "Requirement already satisfied: async-timeout<5.0,>=4.0.0a3 in /usr/local/lib/python3.7/dist-packages (from aiohttp->gradio) (4.0.2)\n",
+            "Requirement already satisfied: asynctest==0.13.0 in /usr/local/lib/python3.7/dist-packages (from aiohttp->gradio) (0.13.0)\n",
+            "Requirement already satisfied: frozenlist>=1.1.1 in /usr/local/lib/python3.7/dist-packages (from aiohttp->gradio) (1.3.1)\n",
+            "Requirement already satisfied: yarl<2.0,>=1.0 in /usr/local/lib/python3.7/dist-packages (from aiohttp->gradio) (1.8.1)\n",
+            "Requirement already satisfied: attrs>=17.3.0 in /usr/local/lib/python3.7/dist-packages (from aiohttp->gradio) (22.1.0)\n",
+            "Requirement already satisfied: multidict<7.0,>=4.5 in /usr/local/lib/python3.7/dist-packages (from aiohttp->gradio) (6.0.2)\n",
+            "Requirement already satisfied: charset-normalizer<3.0,>=2.0 in /usr/local/lib/python3.7/dist-packages (from aiohttp->gradio) (2.1.1)\n",
+            "Requirement already satisfied: typing-extensions>=3.7.4 in /usr/local/lib/python3.7/dist-packages (from aiohttp->gradio) (4.1.1)\n",
+            "Requirement already satisfied: idna>=2.0 in /usr/local/lib/python3.7/dist-packages (from yarl<2.0,>=1.0->aiohttp->gradio) (2.10)\n",
+            "Collecting starlette==0.20.4\n",
+            "  Downloading starlette-0.20.4-py3-none-any.whl (63 kB)\n",
+            "\u001b[K     |████████████████████████████████| 63 kB 2.5 MB/s \n",
+            "\u001b[?25hCollecting anyio<5,>=3.4.0\n",
+            "  Downloading anyio-3.6.1-py3-none-any.whl (80 kB)\n",
+            "\u001b[K     |████████████████████████████████| 80 kB 10.5 MB/s \n",
+            "\u001b[?25hCollecting sniffio>=1.1\n",
+            "  Downloading sniffio-1.3.0-py3-none-any.whl (10 kB)\n",
+            "Collecting httpcore<0.16.0,>=0.15.0\n",
+            "  Downloading httpcore-0.15.0-py3-none-any.whl (68 kB)\n",
+            "\u001b[K     |████████████████████████████████| 68 kB 7.6 MB/s \n",
+            "\u001b[?25hRequirement already satisfied: certifi in /usr/local/lib/python3.7/dist-packages (from httpx->gradio) (2022.9.24)\n",
+            "Collecting rfc3986[idna2008]<2,>=1.3\n",
+            "  Downloading rfc3986-1.5.0-py2.py3-none-any.whl (31 kB)\n",
+            "Requirement already satisfied: MarkupSafe>=0.23 in /usr/local/lib/python3.7/dist-packages (from jinja2->gradio) (2.0.1)\n",
+            "Collecting mdurl~=0.1\n",
+            "  Downloading mdurl-0.1.2-py3-none-any.whl (10.0 kB)\n",
+            "Collecting mdit-py-plugins\n",
+            "  Downloading mdit_py_plugins-0.3.1-py3-none-any.whl (46 kB)\n",
+            "\u001b[K     |████████████████████████████████| 46 kB 5.1 MB/s \n",
+            "\u001b[?25hCollecting linkify-it-py~=1.0\n",
+            "  Downloading linkify_it_py-1.0.3-py3-none-any.whl (19 kB)\n",
+            "Collecting uc-micro-py\n",
+            "  Downloading uc_micro_py-1.0.1-py3-none-any.whl (6.2 kB)\n",
+            "Requirement already satisfied: pyparsing!=2.0.4,!=2.1.2,!=2.1.6,>=2.0.1 in /usr/local/lib/python3.7/dist-packages (from matplotlib->gradio) (3.0.9)\n",
+            "Requirement already satisfied: python-dateutil>=2.1 in /usr/local/lib/python3.7/dist-packages (from matplotlib->gradio) (2.8.2)\n",
+            "Requirement already satisfied: kiwisolver>=1.0.1 in /usr/local/lib/python3.7/dist-packages (from matplotlib->gradio) (1.4.4)\n",
+            "Requirement already satisfied: cycler>=0.10 in /usr/local/lib/python3.7/dist-packages (from matplotlib->gradio) (0.11.0)\n",
+            "Requirement already satisfied: six>=1.5 in /usr/local/lib/python3.7/dist-packages (from python-dateutil>=2.1->matplotlib->gradio) (1.15.0)\n",
+            "Requirement already satisfied: pytz>=2017.3 in /usr/local/lib/python3.7/dist-packages (from pandas->gradio) (2022.4)\n",
+            "Collecting pynacl>=1.0.1\n",
+            "  Downloading PyNaCl-1.5.0-cp36-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.manylinux_2_24_x86_64.whl (856 kB)\n",
+            "\u001b[K     |████████████████████████████████| 856 kB 50.7 MB/s \n",
+            "\u001b[?25hCollecting cryptography>=2.5\n",
+            "  Downloading cryptography-38.0.1-cp36-abi3-manylinux_2_24_x86_64.whl (4.0 MB)\n",
+            "\u001b[K     |████████████████████████████████| 4.0 MB 53.7 MB/s \n",
+            "\u001b[?25hCollecting bcrypt>=3.1.3\n",
+            "  Downloading bcrypt-4.0.1-cp36-abi3-manylinux_2_24_x86_64.whl (593 kB)\n",
+            "\u001b[K     |████████████████████████████████| 593 kB 69.3 MB/s \n",
+            "\u001b[?25hRequirement already satisfied: cffi>=1.12 in /usr/local/lib/python3.7/dist-packages (from cryptography>=2.5->paramiko->gradio) (1.15.1)\n",
+            "Requirement already satisfied: pycparser in /usr/local/lib/python3.7/dist-packages (from cffi>=1.12->cryptography>=2.5->paramiko->gradio) (2.21)\n",
+            "Requirement already satisfied: urllib3!=1.25.0,!=1.25.1,<1.26,>=1.21.1 in /usr/local/lib/python3.7/dist-packages (from requests->gradio) (1.24.3)\n",
+            "Requirement already satisfied: chardet<4,>=3.0.2 in /usr/local/lib/python3.7/dist-packages (from requests->gradio) (3.0.4)\n",
+            "Requirement already satisfied: click>=7.0 in /usr/local/lib/python3.7/dist-packages (from uvicorn->gradio) (7.1.2)\n",
+            "Building wheels for collected packages: ffmpy, python-multipart\n",
+            "  Building wheel for ffmpy (setup.py) ... \u001b[?25l\u001b[?25hdone\n",
+            "  Created wheel for ffmpy: filename=ffmpy-0.3.0-py3-none-any.whl size=4712 sha256=6aef7f10234207da8df21be4b0c785b5ae611834cbdc762559e58f5a0a629799\n",
+            "  Stored in directory: /root/.cache/pip/wheels/13/e4/6c/e8059816e86796a597c6e6b0d4c880630f51a1fcfa0befd5e6\n",
+            "  Building wheel for python-multipart (setup.py) ... \u001b[?25l\u001b[?25hdone\n",
+            "  Created wheel for python-multipart: filename=python_multipart-0.0.5-py3-none-any.whl size=31678 sha256=107031d0eeeabbd49ea37b4099f26470ba86850b73acb06ae424e64a7e8505f2\n",
+            "  Stored in directory: /root/.cache/pip/wheels/2c/41/7c/bfd1c180534ffdcc0972f78c5758f89881602175d48a8bcd2c\n",
+            "Successfully built ffmpy python-multipart\n",
+            "Installing collected packages: sniffio, mdurl, uc-micro-py, rfc3986, markdown-it-py, h11, anyio, starlette, pynacl, mdit-py-plugins, linkify-it-py, httpcore, cryptography, bcrypt, websockets, uvicorn, python-multipart, pydub, pycryptodome, paramiko, orjson, httpx, ffmpy, fastapi, gradio\n",
+            "Successfully installed anyio-3.6.1 bcrypt-4.0.1 cryptography-38.0.1 fastapi-0.85.1 ffmpy-0.3.0 gradio-3.5 h11-0.12.0 httpcore-0.15.0 httpx-0.23.0 linkify-it-py-1.0.3 markdown-it-py-2.1.0 mdit-py-plugins-0.3.1 mdurl-0.1.2 orjson-3.8.0 paramiko-2.11.0 pycryptodome-3.15.0 pydub-0.25.1 pynacl-1.5.0 python-multipart-0.0.5 rfc3986-1.5.0 sniffio-1.3.0 starlette-0.20.4 uc-micro-py-1.0.1 uvicorn-0.18.3 websockets-10.3\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "from huggingface_hub import notebook_login\n",
+        "\n",
+        "notebook_login()"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 300,
+          "referenced_widgets": [
+            "4469051451f94997b5bbee5d93ce74ee",
+            "803b3b578ecc4404b05c41f27ed9e44b",
+            "94d53431ec824f60885a3c33053922b6",
+            "8a9b0e690e104ab8a6c0fb05f43df76e",
+            "75dac8d9065a4eb982424e860cabe622",
+            "daa4ae9cab174ab49e32138a76e4b6fd",
+            "8f155d92c66f4b2692a208cd7096e194",
+            "edeb1da89d424ea4922a93d5814dd8d7",
+            "54b91a9ca887429cbb99dd8908122838",
+            "a3f30566e476467eafa728cbb1a71f33",
+            "be38bab0e6a345978aab0033b472c46e",
+            "cf22c3ef93454ffb84a239455a7699c6",
+            "73cba90e6bc046fc978b9ee7ea955f8d",
+            "e8fd4ec28bdf432aac47fcfed544aed8"
+          ]
+        },
+        "id": "4W7bWazLNnjA",
+        "outputId": "6917ceda-44e4-4121-8093-7c66479d4f4c"
+      },
+      "execution_count": 2,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Login successful\n",
+            "Your token has been saved to /root/.huggingface/token\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "!wget https://raw.githubusercontent.com/huggingface/diffusers/main/examples/inference/image_to_image.py"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Qv2EBO1pPQYo",
+        "outputId": "9619be56-b583-450d-e64c-8e6f78865d72"
+      },
+      "execution_count": 12,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "--2022-10-17 20:48:32--  https://raw.githubusercontent.com/huggingface/diffusers/main/examples/inference/image_to_image.py\n",
+            "Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.108.133, 185.199.109.133, 185.199.110.133, ...\n",
+            "Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.108.133|:443... connected.\n",
+            "HTTP request sent, awaiting response... 200 OK\n",
+            "Length: 243 [text/plain]\n",
+            "Saving to: ‘image_to_image.py’\n",
+            "\n",
+            "\rimage_to_image.py     0%[                    ]       0  --.-KB/s               \rimage_to_image.py   100%[===================>]     243  --.-KB/s    in 0s      \n",
+            "\n",
+            "2022-10-17 20:48:32 (13.7 MB/s) - ‘image_to_image.py’ saved [243/243]\n",
+            "\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import gradio as gr\n",
+        "import inspect\n",
+        "import warnings\n",
+        "import numpy as np\n",
+        "from typing import List, Optional, Union\n",
+        "import requests\n",
+        "from io import BytesIO\n",
+        "from PIL import Image\n",
+        "import torch\n",
+        "from torch import autocast\n",
+        "from tqdm.auto import tqdm\n",
+        "from diffusers import StableDiffusionImg2ImgPipeline\n"
+      ],
+      "metadata": {
+        "id": "RgBbgHv1OFVB"
+      },
+      "execution_count": 3,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# DOWNLOADING AND INITIALIZING THE STABLE DIFFUSION PIPELINE"
+      ],
+      "metadata": {
+        "id": "J0S3x_kPefgG"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "device = \"cuda\"\n",
+        "pipe = StableDiffusionImg2ImgPipeline.from_pretrained(\n",
+        "    \"CompVis/stable-diffusion-v1-4\",\n",
+        "    revision=\"fp16\", \n",
+        "    torch_dtype=torch.float16,\n",
+        "    use_auth_token=True\n",
+        ").to(device)"
+      ],
+      "metadata": {
+        "id": "JbXFEE4BOyQ2",
+        "outputId": "a6d0218b-ff40-42a7-8e0b-68ad455f9a5a",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 66,
+          "referenced_widgets": [
+            "2ee7a9ef29804bb3a7c9c04d61318d36",
+            "30d0ed2240ba43508fe28b7633ec30e1",
+            "36e6509a1ef948acb05b509a31faf5be",
+            "ea2a9e3cff914fdba3a8300aa3c83d59",
+            "96462921ab3147b593823b1df41e549c",
+            "853ffd2d3dd045f38829654f8c4ee311",
+            "98dbe39f6b0545a694eabb173eed72cb",
+            "70605277e68a41e0be8daeaaed289494",
+            "1d6127aec1674cc8946a04c07f0144de",
+            "2fe79d43e5f045bdb6c6beb1d95d8185",
+            "dc2e2c2c73cd447181beb1a5e4fa8127"
+          ]
+        }
+      },
+      "execution_count": 13,
+      "outputs": [
+        {
+          "output_type": "display_data",
+          "data": {
+            "text/plain": [
+              "Fetching 19 files:   0%|          | 0/19 [00:00<?, ?it/s]"
+            ],
+            "application/vnd.jupyter.widget-view+json": {
+              "version_major": 2,
+              "version_minor": 0,
+              "model_id": "2ee7a9ef29804bb3a7c9c04d61318d36"
+            }
+          },
+          "metadata": {}
+        },
+        {
+          "output_type": "stream",
+          "name": "stderr",
+          "text": [
+            "{'trained_betas'} was not found in config. Values will be initialized to default values.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# DEFINING THE MAIN FUNCTION\n",
+        "This function takes in an input image (hand drawn) and a text prompt. It will then generate an image out of the hand drawn image and the prompt!"
+      ],
+      "metadata": {
+        "id": "Vj_bZg04erXY"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def generate(img, strength, prompt):\n",
+        "  prompt += \"with vibrant color background, photorealistic, dynamic lighting, beautiful, trending on artstation, wallpaper, dream, 4 k, award winning, lovely pastel colors, ethereal, elegant \"\n",
+        "  img1 = np.asarray(img)\n",
+        "  img2 = Image.fromarray(img1)\n",
+        "\n",
+        "  init_image = img2.resize((768, 512))\n",
+        "  with autocast(\"cuda\"):\n",
+        "    images = pipe(prompt=prompt, init_image=init_image, strength=strength)[\"sample\"]\n",
+        "\n",
+        "  return(images[0])"
+      ],
+      "metadata": {
+        "id": "5iESF7u0lSoU"
+      },
+      "execution_count": 16,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# DEFINING THE GRADIO INTERFACE"
+      ],
+      "metadata": {
+        "id": "b4lNF1TfpY5I"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "gr.Interface(\n",
+        "    generate,\n",
+        "    title = 'Sketch to Image using Stable Diffusion',\n",
+        "    inputs=[\n",
+        "        gr.Image(source = 'canvas', type = 'pil'),\n",
+        "        gr.Slider(0, 1, value=0.05, label =\"Strength\"),\n",
+        "    \n",
+        "        gr.Textbox(label=\"Prompt\")\n",
+        "    ],\n",
+        "    outputs = [\n",
+        "        gr.Image()\n",
+        "        ]\n",
+        ").launch()\n"
+      ],
+      "metadata": {
+        "id": "cgMkmlvdkokP",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 643
+        },
+        "outputId": "b779bcaf-3853-4cfc-e6f4-285b6cebb309"
+      },
+      "execution_count": 18,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Colab notebook detected. To show errors in colab notebook, set `debug=True` in `launch()`\n",
+            "Running on public URL: https://65d84df1067da2cf.gradio.app\n",
+            "\n",
+            "This share link expires in 72 hours. For free permanent hosting and GPU upgrades (NEW!), check out Spaces: https://huggingface.co/spaces\n"
+          ]
+        },
+        {
+          "output_type": "display_data",
+          "data": {
+            "text/plain": [
+              "<IPython.core.display.HTML object>"
+            ],
+            "text/html": [
+              "<div><iframe src=\"https://65d84df1067da2cf.gradio.app\" width=\"900\" height=\"500\" allow=\"autoplay; camera; microphone; clipboard-read; clipboard-write;\" frameborder=\"0\" allowfullscreen></iframe></div>"
+            ]
+          },
+          "metadata": {}
+        },
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "(<gradio.routes.App at 0x7fac18c60210>,\n",
+              " 'http://127.0.0.1:7865/',\n",
+              " 'https://65d84df1067da2cf.gradio.app')"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 18
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "0meiHiNymoog"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
